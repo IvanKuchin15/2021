@@ -1,0 +1,344 @@
+@import 'null.scss';
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(0, 110, 255);
+}
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    font-size: 20px;
+    margin-bottom: 75px;
+
+    &__logo {
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 28px;
+            &:hover {
+                color: rgb(49, 223, 230);
+            }
+            &:active {
+                color: rgb(68, 15, 216);
+            }
+        }
+    }
+
+    &__pages {
+        display: flex;
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 28px;
+            &:hover {
+                color: rgb(49, 223, 230);
+            }
+            &:active {
+                color: rgb(92, 245, 87);
+            }
+        }
+    }
+
+    &__first {
+        padding-right: 50px;
+    }
+
+    &__second {
+        padding-left: 50px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.video {
+    background-color: rgba(64, 204, 209, 0.5);
+    padding-bottom: 40px;
+    h1{
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 70px;
+        font-size: 35px;
+    }
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nine {
+
+    &__title {
+        text-align: center;
+        padding: 70px 0;
+        font-size: 35px;
+    }
+
+    &__vuz {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__vuz-item {
+        max-width: 300px;
+        border: 6px solid #f67a9f;
+        margin: 20px;
+    }
+}
+.vuz-item {
+    &__title {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        font-size: 20px;
+        border: 3px solid #28428466;
+        margin: 10px 5px;
+        background-color: #cef7f8;
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 19px;
+        color: rgb(61, 49, 230);
+        border: 2px solid #7e7ed6;
+        margin: 5px;
+        height: 100px;
+    }
+    &__button {
+        text-align: center;
+        padding: 10px;
+        button {
+            background-color: #77c3f7;
+            border: 1px solid #77c3f7;
+            box-shadow: 4px 3px 2px grey;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            width: 150px;
+            position: relative;
+            height: 50px;
+            &:hover {
+                left: 1px;
+                top: 1px;
+                background-color: rgb(68, 192, 192);
+                box-shadow: 1px 1px 1px grey;
+                color:#000;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+.eleven {
+    &__title {
+        text-align: center;
+        padding: 100px 0;
+        font-size: 35px;
+    }
+
+    &__sch {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__sch-item {
+        max-width: 300px;
+        border: 6px solid #ffac00;
+        margin: 20px;
+    }
+}
+.sch-item {
+
+    &__title {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 100px;
+        font-size: 20px;
+        padding: 15px 10px;
+        border: 3px solid #00ff04;
+        margin: 10px 5px;
+        background-color: #b6fab7;
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 19px;
+        color: #99a117;
+        padding: 10px 10px;
+        border: 2px solid #bee53b;
+        margin: 5px;
+    }
+
+    &__button {
+        text-align: center;
+        padding: 10px;
+        button {
+            background-color: #3ad043;
+            border: 1px solid #3ad043;
+            box-shadow: 4px 3px 2px #727272;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            width: 150px;
+            height: 50px;
+            position: relative;
+            &:hover {
+                top: 1px;
+                left: 1px;
+                background-color: rgb(2, 255, 108);
+                box-shadow: 1px 1px 1px grey;
+                color:#000;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+.after {
+    background-color: rgb(255 225 41 / 50%);
+    max-width: 1205px;
+    margin: 0 auto;
+    &__vse {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__vz {
+        text-align: center;
+    }
+
+    &__vz-left {
+        padding-bottom: 25px;
+        font-size: 33px;
+    }
+
+    &__vz-niz {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    &__vse-right {
+        img {
+            width: 800px;
+            height: 450px;
+        }
+    }
+}
+
+.prof {
+
+    &__obs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__obs-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 20px;
+        margin: 50px 0;
+        border: 1px solid black;
+    }
+}
+.obs-item {
+    &__pro {
+        background-color: #7ed4db;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    &__vr {
+        background-color: #eeff7f;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    &__zp {
+        background-color: #67d350;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+}
+
+footer {
+    background-color: #4d704f;
+}
+
+.footer {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+    position: relative;
+		&__logo {
+            font-size: 25px;
+            a {
+                color: blanchedalmond;
+                &:hover {
+                    color:rgb(49, 218, 125);
+                }
+            }
+		}
+
+		&__pages {
+            display: flex;
+            font-size: 25px;
+            a {
+                color: blanchedalmond;
+                &:hover {
+                    color:rgb(49, 218, 125);
+                }
+            }
+		}
+
+		&__first {
+            padding-left: 50px;
+		}
+
+		&__second {
+            padding-left: 50px;
+		}
+         
+        &__kuchin {
+            position: absolute;
+            font-size: 11px;
+            top: 88%;
+            left: -20%;
+            a {
+                color:rgb(0, 0, 0);
+            }
+        }
+}
+
+
+
