@@ -328,6 +328,93 @@ header {
   font-size: 24px;
 }
 
+.voina {
+  font-size: 17px;
+}
+.voina__title {
+  text-align: center;
+  padding: 100px 0 50px 0;
+  font-size: 35px;
+}
+.voina__table {
+  border: 2px solid #f2f2f2;
+  border-bottom: none;
+  box-shadow: 3px 3px 7px #b8bdae;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  color: #e9caca;
+}
+.voina__table-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f2f2;
+  height: 50px;
+}
+.voina__table-subtitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #f2f2f2;
+  height: 80px;
+}
+
+.table-title__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-right: 2px solid #f2f2f2;
+}
+.table-title__city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-right: 2px solid #f2f2f2;
+}
+.table-title__cafedra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-right: 2px solid #f2f2f2;
+}
+.table-title__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.table-subtitle__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-right: 2px solid #f2f2f2;
+}
+.table-subtitle__city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-right: 2px solid #f2f2f2;
+}
+.table-subtitle__cafedra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-right: 2px solid #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+.table-subtitle__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  text-align: center;
+}
+
 footer {
   background-color: #4d704f;
 }
@@ -373,4 +460,141 @@ footer {
 }
 .footer__kuchin a {
   color: black;
+}
+
+.word {
+  margin-bottom: 30px;
+}
+.word__together {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.word__title {
+  text-align: center;
+  font-size: 35px;
+}
+.word__subtitle {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 20px;
+}
+.word__first {
+  line-height: 20px;
+}
+.word__first-title {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.word__first-list {
+  padding-bottom: 30px;
+}
+.word__first-list li {
+  background: url(img/icon_180.png) no-repeat -5px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.word__first-list li:hover {
+  color: #017edf;
+}
+.word__second {
+  line-height: 20px;
+}
+.word__second-title {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.word__second-list {
+  padding-bottom: 30px;
+}
+.word__second-list li {
+  background: url(img/icon_180.png) no-repeat -5px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.word__second-list li:hover {
+  color: #017edf;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form__data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid silver;
+}
+.form__input:focus ~ .form__label {
+  transform: translateY(-20px);
+  color: #4158d0;
+  font-size: 15px;
+}
+.form__input:valid ~ .form__label {
+  transform: translateY(-20px);
+  font-size: 15px;
+}
+.form__underline {
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+.form__underline::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: #4158d0;
+  transition: transform 0.3s ease;
+}
+.form__input:focus ~ .form__underline::before {
+  transform: scaleX(1);
+}
+.form__input:valid ~ .form__underline::before {
+  transform: scaleX(1);
+}
+.form__label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: all ease 0.3s;
+}
+
+.kaz__title {
+  font-size: 30px;
+  padding: 50px 0 50px;
+  text-align: center;
+}
+.kaz__item {
+  font-size: 22px;
+  padding-bottom: 25px;
+  line-height: 25px;
+  border: 2px solid;
+  margin: 10px;
+  padding: 10px;
+  background-color: #b0b5ff;
+  color: #fff;
+  border-radius: 15px;
 }
